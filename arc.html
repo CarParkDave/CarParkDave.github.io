@@ -92,3 +92,280 @@ where x,y are the coordinates of each point and r is the radius of the circle.
 
 
 <p>
+In its simplest form, the equation of a 
+<a href="circle.html">circle</a> is 
+
+<script>new Equation("x^2+y^2=r^2", "solo");</script>
+
+What this means is that for any point on the circle, the above equation will be true, and for all other points it will not.
+This is simply a result of the 
+<a href="pythagorastheorem.html">Pythagorean Theorem</a>.   
+In the figure above, you will see a right triangle.   The 
+<a href="hypotenuse.html" title="The longest side of a right triangle. The side opposite the right angle. ">hypotenuse</a> is
+the 
+<a href="radius.html" title="A line from the center of a circle to a point on the circle">radius</a>
+of the circle, and the other two sides are the x and y coordinates of the point P.
+&nbsp;Applying the Pythagorean Theorem to this right triangle produces the circle equation.
+</p>
+
+<p>
+As you drag the point P around the circle, you will see that the relationship between x,y and r always holds.  
+The radius <em>r</em> never changes, it is set to 20 in this applet.  So <em>x and y</em> change according to the Pythagorean theorem
+to give the coordinates of P as it moves around the circle.
+</p>
+
+<p>
+Therefore,  the idea here is that the circle is the 
+<a href="locus.html" title="A shape created by the set of points whose position satisfies a given set of rules ">locus</a>
+of (the shape formed by) all the points that satisfy the equation.
+</p>
+
+
+
+
+<h2>Example</h2>
+<p>
+A circle with the equation
+<script>new Equation("x^2+y^2 = 64", "solo");</script>
+Is a circle with its center at the origin and a radius of 8.  &nbsp;&nbsp;(8 squared is 64).
+</p>
+
+
+
+
+
+<!-- @@include contenth2.txt  -->
+
+
+
+<!-- @@include adunits/inarticle.txt  -->
+
+
+
+<div class="inarticle">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<ins class="adsbygoogle"
+		 style="display:block; text-align:center;"
+		 data-ad-layout="in-article"
+		 data-ad-format="fluid"
+		 data-ad-client="ca-pub-2974595584684519"
+		 data-ad-slot="8361044949"
+		 data-full-width-responsive="false"></ins>
+	<script>
+		 (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+
+
+
+
+
+
+<h2>Solving the equation for the radius r</h2>
+<p>
+The equation has three variables (x, y and r).  If we know any two, then we can find the third.  So if we are given 
+a point with known x and y coordinates we can rearrange the equation to solve for r:
+<IMG class="gImgRight" SRC="images/coordbasiccircle/onepoint.png" WIDTH="125" HEIGHT="117" BORDER="0" ALT="">
+<script>new Equation("r=@sqrt{x^2+y^2}", "solo");</script>
+The negative root here has no meaning.
+Note the this only works where the circle center is at the origin (0,0), because then 
+there is only one circle that will pass through the given point P.   This finds the radius r of that circle.
+</p>
+
+
+
+<h2>Solving for a coordinate</h2>
+<p>
+The equation has three variables (x, y and r).  If we know any two, then we can find the third.  So if we are given 
+the radius r, and an x coordinate, we can find y by rearranging the equation:
+
+<IMG class="gImgRight" SRC="images/coordbasiccircle/twopoints.png" WIDTH="158" HEIGHT="142" BORDER="0" ALT="">
+<script>new Equation("y = @plusmin @sqrt{r^2-x^2}", "solo");</script>
+</p>
+
+<p>
+Notice how this has two answers, due to the plus/minus.  
+This is expected since there are two points on the circle that have the same x coordinate.
+</p>
+
+<p>
+On the right it is shown that for a given x coordinate,we see the two points p1 and p2 that share that x-coordinate.
+</p>
+
+
+
+<h2>What if the circle center is not at the origin?</h2>
+<p>
+Then we just  add or subtract fixed amounts to the x and y coordinates to bring it back to the origin.
+For more on this see 
+<a href="coordgeneralcircle.html">General Equation of a Circle</a>.
+</p>
+
+
+
+
+
+<h2>Parametric form</h2>
+<p>
+Instead of using the <a href="pythagorastheorem.html">Pythagorean Theorem</a> 
+to solve the right triangle in the circle above, we can also solve it using trigonometry.
+This produces the so-called parametric form of the circle equation as described in 
+<a href="coordparamcircle.html">Parametric Equation of a Circle</a>.
+This parametric form is especially useful in computer algorithms that draw circles and ellipses. It is described in
+<a href="coordcirclealgorithm.html">An Algorithm for Drawing Circles</a>.
+</p>
+
+
+
+<h2>Things to try</h2>
+<ul style="margin-top:10px">
+<li>In the above applet click 'reset', and 'hide details'.
+<li>Check 'Show coordinates' and uncheck 'freeze radius'.
+<li>Drag the point P to create a circle of your choice.
+<li>Calculate the radius of the circle, and write the equation of the circle.
+<li>Click 'show details' to check your result.
+</ul>
+
+
+<!-- @@include circleeqncite.txt  -->
+
+
+
+<!-- @@include adunits/cite1.txt  -->
+
+
+
+<!-- @@include adunits/inarticle.txt  -->
+
+
+
+<div class="inarticle">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<ins class="adsbygoogle"
+		 style="display:block; text-align:center;"
+		 data-ad-layout="in-article"
+		 data-ad-format="fluid"
+		 data-ad-client="ca-pub-2974595584684519"
+		 data-ad-slot="8361044949"
+		 data-full-width-responsive="false"></ins>
+	<script>
+		 (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+
+
+
+
+
+
+<h2>Related topics</h2>
+
+
+
+<ul class="citeUL">
+	<li>  <a class="gSeeAlso" href="tocs/coordcirclestoc.html">Equations of circles and ellipses</a></li>
+	<li>  <a class="gSeeAlso" href="tocs/circlestoc.html">Circles and arcs</a></li>
+	<li>  <a class="gSeeAlso" href="tocs/ellipsetoc.html">Ellipses</a></li>
+	<li>  <a class="gSeeAlso" href="tocs/coordpointstoc.html">Coordinate Geometry</a></li>
+</ul>
+
+
+
+
+<!-- @@include smallprint.txt  -->
+
+<!-- include starts  -->
+<form id="feedback" action="/site/contacts.php" method="post">
+	<input class="fbInput1" type="hidden" name="refpage"  id="refpage" value=""  />
+</form>
+
+
+
+<div class="legal" >
+  (C) 2011 Copyright Math Open Reference. 
+  <br>All rights reserved
+</div>
+
+<!-- include ends -->
+
+
+
+
+
+
+<!-- @@include rightcol.txt  -->
+
+
+
+
+<div  class="rightCol" >
+	<div class="advertisement">
+	<a href="siteads.html"> About these <br> ADVERTISEMENTS </a>
+	</div>
+
+	<!-- @@include adunits/rightcol300x600.txt  -->
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Rightcol300 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2974595584684519"
+     data-ad-slot="4518424854"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+        <br><br><br><br>
+
+	<!-- @@include adunits/rightcol300x600.txt  -->
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Rightcol300 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2974595584684519"
+     data-ad-slot="4518424854"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- @@include hitcounter.txt  -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-88697705-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+</body>
+</html>
+
